@@ -11,7 +11,39 @@ module.exports = {
   },
   darkMode: 'class',
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        sans: ['"IBM Plex Sans Thai"', 'sans-serif'],
+        serif: ['"IBM Plex Sans Thai Looped"', 'serif']
+      },
+      colors: {
+        primary: {
+          black: '#444444',
+          white: '#FFFFFF',
+          blue:  '#007FFF'
+        },
+        secondary: {
+          black: {
+            '100': '#DADADA',
+            '200': '#B4B4B4',
+            '300': '#8F8F8F',
+            '400': '#696969',
+            '500': '#444444',
+            '600': '#363636',
+            '700': '#292929',
+            '800': '#1B1B1B',
+            '900': '#1B1B1B'
+          },
+          blue: {
+            '100': '#498FF2',
+            '200': '#007FFF',
+            '300': '#0064F0',
+            '400': '#0047AB',
+            '500': '#224270'
+          }
+        }
+      }
+    },
   },
   variants: {
     extend: {},
