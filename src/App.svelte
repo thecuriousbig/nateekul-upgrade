@@ -1,5 +1,5 @@
 <script>
-	export let name;
+	import NavigatorBar from './components/NavigatorBar.svelte'
 </script>
 
 <svelte:head>
@@ -8,9 +8,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&family=IBM+Plex+Sans+Thai+Looped&display=swap" rel="stylesheet">
 </svelte:head>
 
-<div class="pt-10 bg-primary-black">
-	<h1 class="text-center font-serif text-primary-white">สวัสดีครับ</h1>
-</div>
+<NavigatorBar />
 
 <style lang="postcss" global>
 	@tailwind base;

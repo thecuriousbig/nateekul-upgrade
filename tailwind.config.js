@@ -23,7 +23,7 @@ module.exports = {
           blue:  '#007FFF'
         },
         secondary: {
-          black: {
+          gray: {
             '100': '#DADADA',
             '200': '#B4B4B4',
             '300': '#8F8F8F',
@@ -32,7 +32,7 @@ module.exports = {
             '600': '#363636',
             '700': '#292929',
             '800': '#1B1B1B',
-            '900': '#1B1B1B'
+            '900': '#0E0E0E'
           },
           blue: {
             '100': '#498FF2',
