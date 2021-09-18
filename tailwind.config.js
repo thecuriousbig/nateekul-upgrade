@@ -20,7 +20,8 @@ module.exports = {
         primary: {
           black: '#444444',
           white: '#FFFFFF',
-          blue:  '#007FFF'
+          blue:  '#007FFF',
+          green: '#06C755'
         },
         secondary: {
           gray: {
@@ -40,9 +41,15 @@ module.exports = {
             '300': '#0064F0',
             '400': '#0047AB',
             '500': '#224270'
-          }
+          },
         }
-      }
+      },
+      stroke: theme => ({
+        black: theme('colors.gray.800')
+      }),
+      fill: theme => ({
+        white: theme('colors.primary.white')
+      })
     },
   },
   variants: {

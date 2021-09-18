@@ -1,5 +1,6 @@
 <script>
 	import NavigatorBar from './components/NavigatorBar.svelte'
+	import Landing from './sections/Landing.svelte'
 </script>
 
 <svelte:head>
@@ -9,6 +10,7 @@
 </svelte:head>
 
 <NavigatorBar />
+<Landing />
 
 <style lang="postcss" global>
 	@tailwind base;
