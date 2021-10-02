@@ -1,6 +1,7 @@
 <script>
 	import NavigatorBar from './components/NavigatorBar.svelte'
 	import Landing from './sections/Landing.svelte'
+	import Quirk from './sections/Quirk.svelte'
 </script>
 
 <svelte:head>
@@ -11,6 +12,7 @@
 
 <NavigatorBar />
 <Landing />
+<Quirk />
 
 <style lang="postcss" global>
 	@tailwind base;
