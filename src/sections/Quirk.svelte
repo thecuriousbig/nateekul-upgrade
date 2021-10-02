@@ -18,7 +18,7 @@ const totalQuirk = [
   {
     id: 'Strategically Consultance',
     title: 'ยินดีให้คำปรึกษา',
-    paragraph: 'Strategically Consultance asdasdasdasdasdasdasdasdhklasn;adnfjsdnf;asdnf;sndfna;dnf',
+    paragraph: 'Strategically Consultance',
     image: '../assets/artworks/info-center-linear.png'
   }
 ]
