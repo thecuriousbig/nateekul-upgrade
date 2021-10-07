@@ -27,13 +27,18 @@ const totalQuirk = [
 <section id="quirk" class="w-full bg-primary-black">
   <Container>
     <div class="flex flex-wrap justify-center">
-      {#each totalQuirk as quirk}
-        <Card
-          id={quirk.id}
-          title={quirk.title}
-          paragraph={quirk.paragraph}
-          image={quirk.image}
-        />
+      {#each totalQuirk as {id, title, paragraph, image} }
+        <div class="flex flex-col w-full m-6 overflow-hidden sm:w-60">
+          <article id={id}>
+            <picture class="block">
+              <img src={image} alt="card" class="mx-auto" />
+            </picture>
+            <div class="py-2 px-4 w-full text-primary-white text-center">
+              <h3 class="mt-2 text-xl">{title}</h3>
+              <p class="p-3 text-base">{paragraph}</p>
+            </div>
+          </article>
+        </div>
       {/each}
     </div>
   </Container>

@@ -1,19 +1,23 @@
 <script>
   export let id
-  export let title
+  export let title = 'card title'
+  export let subtitle
   export let paragraph
   export let image
 </script>
 
 
-<div class="flex flex-col w-full m-6 overflow-hidden sm:w-60">
-  <article id={id}>
-    <picture class="block">
-      <img src={image} alt="card" class="mx-auto" />
-    </picture>
-    <div class="py-2 px-4 w-full text-primary-white text-center">
-      <h3 class="mt-2 text-xl">{title}</h3>
-      <p class="p-3 text-base">{paragraph}</p>
-    </div>
-  </article>
-</div>
+<article id={id} class={$$props.cardStyle}>
+  <picture class="block">
+    <img src={image} alt="card" class="mx-auto" />
+  </picture>
+  <div class="py-2 px-4 w-full ">
+    <h3 class="text-lg font-bold">{title}</h3>
+    {#if subtitle}
+      <h4 class="text-base text-secondary-gray-300">{subtitle}</h4>  
+    {/if}
+    {#if paragraph}
+      <p class="text-sm">{paragraph}</p> 
+    {/if}
+  </div>
+</article>

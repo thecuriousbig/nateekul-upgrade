@@ -3,6 +3,7 @@
 	import Landing from './sections/Landing.svelte'
 	import Quirk from './sections/Quirk.svelte'
 	import About from './sections/About.svelte'
+	import Example from './sections/Example.svelte'
 </script>
 
 <svelte:head>
@@ -15,6 +16,7 @@
 <Landing />
 <Quirk />
 <About />
+<Example />
 
 <style lang="postcss" global>
 	@tailwind base;
